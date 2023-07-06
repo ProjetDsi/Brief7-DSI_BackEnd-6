@@ -19,6 +19,7 @@ require('./src/routes/deleteUser')(app);
 require('./src/routes/updateUser')(app);
 require('./src/routes/login')(app);
 // routes pour les requêtes concernant la connexion admin
+require('./src/routes/createBlog')(app);
 
 
 app.listen(port, () => console.log(`Notre appli Node est démarrée sur : http://localhost: ${port}`));

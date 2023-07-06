@@ -1,6 +1,6 @@
 // middleware de sécurisation des échanges entre le client et l'API REST, vérification validité du jeton transmis par client lors des requêtes
 const jwt = require('jsonwebtoken')
-const privateKey = require('../auth/private_key')
+const privateKey = require('../auth/private_key');
   
 module.exports = (req, res, next) => {
   const authorizationHeader = req.headers.authorization

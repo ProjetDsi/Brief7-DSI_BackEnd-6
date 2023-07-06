@@ -4,10 +4,11 @@ const { Sequelize, DataTypes} = require('sequelize');
 const UserModel = require('../models/users');
 // Importation du modèle d'utilisateur (users.js)  
 // const bcrypt = require('bcrypt');
+const BlogModel = require('../models/blogs');
 
 
 
-const sequelize = new Sequelize('dsi_sensibilisation', 'root', 'password', {
+const sequelize = new Sequelize('dsi_sensibilisation', 'root', 'root', {
   host: 'localhost',
   dialect: 'mysql',
   dialectOptions: {
@@ -20,7 +21,7 @@ const sequelize = new Sequelize('dsi_sensibilisation', 'root', 'password', {
 
 const User = UserModel(sequelize, DataTypes);
 // Création du modèle User en utilisant le modèle UserModel et ses paramètres sequelize et DataTypes
-
+const Blog = BlogModel(sequelize, DataTypes);
 
 
 // bcrypt.hash('password', 10) 
@@ -38,7 +39,7 @@ sequelize
 
 
 module.exports = { 
-    User
+    User, Blog
  }
 // Exportation du modèle User pour pouvoir l'utiliser ailleurs dans le code.
 
