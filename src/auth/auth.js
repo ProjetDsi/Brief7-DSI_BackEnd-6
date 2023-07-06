@@ -4,7 +4,7 @@ const privateKey = require('../auth/private_key');
   
 module.exports = (req, res, next) => {
   const authorizationHeader = req.headers.authorization
-    // récupération de l'en-tête HTTP authorization. c'est dans cet en-tête que transitera le jeton jwt envoyé par le consommateur
+    //récupération de l'en-tête HTTP authorization. c'est dans cet en-tête que transitera le jeton jwt envoyé par le consommateur
   
   if(!authorizationHeader) {
     const message = `Vous n'avez pas fourni de jeton d'authentification. Ajoutez-en un dans l'en-tête de la requête.`
