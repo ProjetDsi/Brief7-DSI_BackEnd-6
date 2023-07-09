@@ -1,4 +1,5 @@
 const { User } = require('../db/sequelize');
+const auth = require("../auth/auth");
 
 module.exports = (app) => {
   app.delete('/user_tests/:id',auth,  (req, res) => {
