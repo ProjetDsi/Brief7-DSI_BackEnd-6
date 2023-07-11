@@ -14,5 +14,5 @@ module.exports = (app) => {
         })
     })
 }
-// export de la req uête afin de l'utiliser dans le point d'entrée
-///Coucou
+// export de la requête afin de l'utiliser dans le point d'entrée
+

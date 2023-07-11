@@ -8,7 +8,7 @@ const BlogModel = require('../models/blogs');
 
 
 
-const sequelize = new Sequelize('dsi_sensibilisation', 'root', 'password', {
+const sequelize = new Sequelize('dsi_sensibilisation', 'root', 'root', {
   host: 'localhost',
   dialect: 'mysql',
   dialectOptions: {

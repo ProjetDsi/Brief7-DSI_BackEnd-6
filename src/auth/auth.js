@@ -12,7 +12,7 @@ module.exports = (req, res, next) => {
   }
     // vérification si jeton a bien été fourni
     const token = authorizationHeader.split(' ')[1]
-    // voir Bearer
+    // voir Bearer. Fait un tableau d'une chaîne de caractères. index 1 => token
     const decodedToken = jwt.verify(token, privateKey, (error, decodedToken) => {
     if(error) {
         // vérification jeton valide

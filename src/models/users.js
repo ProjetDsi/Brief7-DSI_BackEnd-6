@@ -26,4 +26,4 @@ module.exports = (sequelize, DataTypes) => {
     })
   }
 
-//  définition de modèle Sequelize pour une table nommée "user_tests". 
+//  définition de modèle Sequelize pour une table nommée "user_tests". Modélisation
